@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Narmadha S</title>
+<style>
+  body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}  
+footer .link-group a{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+footer .link-group a:hover{
+  color: #fca61f;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+    <div class="card">
+      <img src="download9.png" class="card-img-top" alt="..." />
+      <div class="card-body text-center">
+        <h4 class="card-title">Online Learning</h4>
+        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+        <span class="badge bg-secondary badge-pill">JavaScript</span>
+        <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+        <a href="javascript:void(0)" class="read-more-btn link" onclick="toggleImages()">Read More</a>
+        
+        <!-- Hidden Images Section -->
+        <div id="extra-images" class="extra-images">
+          <img src="download1.png" class="additional-img" alt="Image 1" />
+          <img src="download2.png" class="additional-img" alt="Image 2" />
+          <img src="download3.png" class="additional-img" alt="Image 3" />
+        </div>
+      </div>
+    </div>
+  </div>
+<style>
+    /* Initial hidden state for extra images */
+.extra-images {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  margin-top: 10px;
+}
+
+/* Animation for fading in images */
+.extra-images.show {
+  display: block;
+  opacity: 1;
+}
+
+.additional-img {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+}
+
+</style>  
+<script>
+    function toggleImages() {
+  const extraImages = document.getElementById("extra-images");
+  if (extraImages.classList.contains("show")) {
+    extraImages.classList.remove("show");
+  } else {
+    extraImages.classList.add("show");
+  }
+}
+
+</script>
+<div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+    <div class="card">
+      <img src="download9.png" class="card-img-top" alt="..." />
+      <div class="card-body text-center">
+        <h4 class="card-title">Online Learning</h4>
+        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+        <span class="badge bg-secondary badge-pill">JavaScript</span>
+        <span class="badge bg-secondary badge-pill mb-2">Game</span
+        ><br />
+        <a href="#" class="read-more-btn link">Read More</a>
+      </div>
+    </div>
+  </div> 
